@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
     <!-- Stylesheet -->
@@ -15,17 +17,20 @@
 <body>
     <div class="container">
         <form>
-            <input type="number" class="input-country" placeholder="Entrer le code indicatif " required>
+            <input type="number" class="input-country" placeholder="Entrez le code indicatif ici " required>
             <button class="button-search">Recherche</button>
         </form>
-        <!-- <div class="search-wrapper">
-            <input type="number" class="input-country" placeholder="Entrer le code l'indicatif " required>
-            <button class="button-search">Recherche</button>
-        </div> -->
+        
 
         <!-- affichage resultat-->
         <p class="error-msg"></p>
         <div class="result"></div>
+
+        <div class="loader">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
 
     </div>
     <!-- Script -->
